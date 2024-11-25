@@ -103,17 +103,9 @@
             font-size: 1.4em;
         }
 
-        .education-item {
-            margin-bottom: 25px;
-        }
-
-        .education-item:last-child {
-            margin-bottom: 0;
-        }
-
         .research-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 25px;
             margin-top: 30px;
         }
@@ -124,6 +116,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            aspect-ratio: 3/4;
         }
 
         .gallery-item:hover {
@@ -132,7 +125,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: 250px;
+            height: 100%;
             object-fit: cover;
             display: block;
             transition: transform 0.3s ease;
@@ -217,7 +210,7 @@
             }
 
             .research-gallery {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             }
         }
     </style>
@@ -298,76 +291,6 @@
                     <li>NASA Toward Environmentally and Socially Equitable Stormwater Management Fees [80NSSC22K1670]</li>
                 </ul>
             </div>
-
-        <section id="publications">
-            <h2>Research Publications</h2>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Wenlu Wang, Mehrube Mehrubeoglu, and Hua Zhang. (2024). GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. In The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24), October 29-November 1, 2024, Atlanta, GA, USA. ACM, New York, NY, USA, 11 pages. <a href="https://doi.org/10.1145/3678717.3691281" class="doi-link" target="_blank">https://doi.org/10.1145/3678717.3691281</a></p>
-            </div>
-            <div class="publication">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Jim Lee, Hua Zhang. (2024). Equitable stormwater utility fees: an integrated analysis of environmental, socioeconomic and infrastructure factors at the community scale. Environmental research infrastructure and sustainability. <a href="https://doi.org/10.1088/2634-4505/ad8305" class="doi-link" target="_blank">https://doi.org/10.1088/2634-4505/ad8305</a></p>
-            </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Jim Lee, Yuxia Huang, Hua Zhang. (2024). Integrated urban land cover analysis using deep learning and post-classification correction. Computer-Aided Civil and Infrastructure Engineering. <a href="https://doi.org/10.1111/mice.1327" class="doi-link" target="_blank">https://doi.org/10.1111/mice.1327</a></p>
-            </div>
-            <div class="publication">
-                <p>Jim Lee, Hua Zhang, Yuxia Huang. (2024). Toward a more socially equitable stormwater management fee: The case of Corpus Christi in Texas, USA. Environment and Planning B: Urban Analytics and City Science. <a href="https://doi.org/10.1177/23998083231207535" class="doi-link" target="_blank">https://doi.org/10.1177/23998083231207535</a> (Contribution recognized in the acknowledgment section)</p>
-            </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Aerial Characterization of Surface Depressions in Urban Watersheds. Journal of Hydrology. <a href="https://doi.org/10.1016/j.jhydrol.2023.129954" class="doi-link" target="_blank">https://doi.org/10.1016/j.jhydrol.2023.129954</a></p>
-            </div>
-<div class="container">
-        <section id="publications">
-            <h2>Research Publications</h2>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Wenlu Wang, Mehrube Mehrubeoglu, and Hua Zhang. (2024). GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. In The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24), October 29-November 1, 2024, Atlanta, GA, USA. ACM, New York, NY, USA, 11 pages. <a href="https://doi.org/10.1145/3678717.3691281" class="doi-link" target="_blank">https://doi.org/10.1145/3678717.3691281</a></p>
-            </div>
-            <div class="publication">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Jim Lee, Hua Zhang. (2024). Equitable stormwater utility fees: an integrated analysis of environmental, socioeconomic and infrastructure factors at the community scale. Environmental research infrastructure and sustainability. <a href="https://doi.org/10.1088/2634-4505/ad8305" class="doi-link" target="_blank">https://doi.org/10.1088/2634-4505/ad8305</a></p>
-            </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Jim Lee, Yuxia Huang, Hua Zhang. (2024). Integrated urban land cover analysis using deep learning and post-classification correction. Computer-Aided Civil and Infrastructure Engineering. <a href="https://doi.org/10.1111/mice.1327" class="doi-link" target="_blank">https://doi.org/10.1111/mice.1327</a></p>
-            </div>
-            <div class="publication">
-                <p>Jim Lee, Hua Zhang, Yuxia Huang. (2024). Toward a more socially equitable stormwater management fee: The case of Corpus Christi in Texas, USA. Environment and Planning B: Urban Analytics and City Science. <a href="https://doi.org/10.1177/23998083231207535" class="doi-link" target="_blank">https://doi.org/10.1177/23998083231207535</a> (Contribution recognized in the acknowledgment section)</p>
-            </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Aerial Characterization of Surface Depressions in Urban Watersheds. Journal of Hydrology. <a href="https://doi.org/10.1016/j.jhydrol.2023.129954" class="doi-link" target="_blank">https://doi.org/10.1016/j.jhydrol.2023.129954</a></p>
-            </div>
-        </section>
-
-        <section id="presentations">
-            <h2>Research Presentations</h2>
-            <div class="presentation">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Utilizing Unmanned Aircraft Systems (UAS) for Identifying Surface Depressions in Urban Watersheds: How Reliable Is It?. Presentation presented at: AGU Fall Meeting 2023. San Francisco, CA.</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Investigating environmental justice in stormwater utility fees at the parcel scale using an unmanned aircraft system and machine learning. Presentation presented at: 2023 World Environmental & Water Resources Congress; Henderson, NV</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at: Symposium for Student Innovation, Research, and Creative Activities; Corpus Christi, TX</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Are stormwater utility fees reasonable? A parcel-scale investigation using an unmanned aircraft system and machine learning. Poster presented at: Texas Water 2023; Houston, TX</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
-            </div>
-            <div class="presentation">
-                <p>Aaliyah Timms, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Hannah Garcia, Wen Zhong. Investigating the impacts of surface imperviousness on runoff generation through laboratory experiments based on an advanced hydrology apparatus. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
-            </div>
-        </section>
-
-        <section id="research-projects">
-            <h2>Research Experience</h2>
-            <div class="research-item">
-                <h3>Current Research Projects</h3>
-                <ul>
-                    <li>NSF AI-powered Diagnosis Augmented by Self-sustaining Sensing System for Intelligent Wastewater Infrastructure Management [2318641]</li>
-                    <li>NSF Where the Runoff Begins: Rethinking the Role of Impervious Area in Urban Stormwater Management [2050986]</li>
-                    <li>NASA Toward Environmentally and Socially Equitable Stormwater Management Fees [80NSSC22K1670]</li>
-                </ul>
-            </div>
             
             <div class="research-gallery">
                 <div class="gallery-item">
@@ -405,6 +328,47 @@
             </div>
         </section>
 
+        <section id="publications">
+            <h2>Research Publications</h2>
+            <div class="publication">
+                <p><span class="author-name">Lapone Techapinyawat</span>, Wenlu Wang, Mehrube Mehrubeoglu, and Hua Zhang. (2024). GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. In The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24), October 29-November 1, 2024, Atlanta, GA, USA. ACM, New York, NY, USA, 11 pages. <a href="https://doi.org/10.1145/3678717.3691281" class="doi-link" target="_blank">https://doi.org/10.1145/3678717.3691281</a></p>
+            </div>
+            <div class="publication">
+                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Jim Lee, Hua Zhang. (2024). Equitable stormwater utility fees: an integrated analysis of environmental, socioeconomic and infrastructure factors at the community scale. Environmental research infrastructure and sustainability. <a href="https://doi.org/10.1088/2634-4505/ad8305" class="doi-link" target="_blank">https://doi.org/10.1088/2634-4505/ad8305</a></p>
+            </div>
+            <div class="publication">
+                <p><span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Jim Lee, Yuxia Huang, Hua Zhang. (2024). Integrated urban land cover analysis using deep learning and post-classification correction. Computer-Aided Civil and Infrastructure Engineering. <a href="https://doi.org/10.1111/mice.1327" class="doi-link" target="_blank">https://doi.org/10.1111/mice.1327</a></p>
+            </div>
+            <div class="publication">
+                <p>Jim Lee, Hua Zhang, Yuxia Huang. (2024). Toward a more socially equitable stormwater management fee: The case of Corpus Christi in Texas, USA. Environment and Planning B: Urban Analytics and City Science. <a href="https://doi.org/10.1177/23998083231207535" class="doi-link" target="_blank">https://doi.org/10.1177/23998083231207535</a> (Contribution recognized in the acknowledgment section)</p>
+</div>
+            <div class="publication">
+                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Aerial Characterization of Surface Depressions in Urban Watersheds. Journal of Hydrology. <a href="https://doi.org/10.1016/j.jhydrol.2023.129954" class="doi-link" target="_blank">https://doi.org/10.1016/j.jhydrol.2023.129954</a></p>
+            </div>
+        </section>
+
+        <section id="presentations">
+            <h2>Research Presentations</h2>
+            <div class="presentation">
+                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Utilizing Unmanned Aircraft Systems (UAS) for Identifying Surface Depressions in Urban Watersheds: How Reliable Is It?. Presentation presented at: AGU Fall Meeting 2023. San Francisco, CA.</p>
+            </div>
+            <div class="presentation">
+                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Investigating environmental justice in stormwater utility fees at the parcel scale using an unmanned aircraft system and machine learning. Presentation presented at: 2023 World Environmental & Water Resources Congress; Henderson, NV</p>
+            </div>
+            <div class="presentation">
+                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at: Symposium for Student Innovation, Research, and Creative Activities; Corpus Christi, TX</p>
+            </div>
+            <div class="presentation">
+                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Are stormwater utility fees reasonable? A parcel-scale investigation using an unmanned aircraft system and machine learning. Poster presented at: Texas Water 2023; Houston, TX</p>
+            </div>
+            <div class="presentation">
+                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
+            </div>
+            <div class="presentation">
+                <p>Aaliyah Timms, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Hannah Garcia, Wen Zhong. Investigating the impacts of surface imperviousness on runoff generation through laboratory experiments based on an advanced hydrology apparatus. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
+            </div>
+        </section>
+
         <section id="awards">
             <h2>Financial Awards</h2>
             <div class="award">
@@ -431,4 +395,4 @@
         </section>
     </div>
 </body>
-</html>
+</html>                
