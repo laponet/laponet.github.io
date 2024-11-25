@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapone Techapinyawat - Geospatial Computer Science</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 0;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .section-content {
+            padding: 0 20px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-item {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .publication {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3, .experience-item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            header {
+                padding: 40px 0;
+            }
+
+            .profile-info h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-info">
+                <h1>Lapone Techapinyawat</h1>
+                <p>PhD Candidate in Geospatial Computer Science</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> ltechapinyawat@islander.tamucc.edu</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Corpus Christi, TX</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="section-content">
+                <h2>Professional Summary</h2>
+                <p>PhD candidate in Geospatial Computer Science with a 4.0 GPA, specializing in scalable and efficient geospatial and urban infrastructure modeling for large-scale urban datasets. Skilled in spatial algorithm development and deep learning, with experience on NSF- and NASA-funded projects. Expertise in UAV data processing, Real-Time Kinetic (RTK) Positioning, photogrammetry, and integration of raster and vector data for high-resolution urban analysis.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-content">
+                <h2>Core Skills</h2>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">SQL</span>
+                    <span class="skill-item">GIS</span>
+                    <span class="skill-item">Machine Learning</span>
+                    <span class="skill-item">Deep Learning</span>
+                    <span class="skill-item">Graph Neural Networks</span>
+                    <span class="skill-item">UAV</span>
+                    <span class="skill-item">Photogrammetry</span>
+                    <span class="skill-item">Spatial Analysis</span>
+                    <span class="skill-item">Remote Sensing</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-content">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Ph.D. in Geospatial Computer Science</h3>
+                    <p>Texas A&M University – Corpus Christi</p>
+                    <p>Expected Graduation: Fall 2025 | GPA: 4.0</p>
+                    <p>Dissertation: Development of Integrated Hydrological and Geospatial Methods for Urban Stormwater Management</p>
+                </div>
+                <div class="education-item">
+                    <h3>M.Sc. in Geological Engineering</h3>
+                    <p>University of Idaho</p>
+                    <p>GPA: 4.0</p>
+                </div>
+                <div class="education-item">
+                    <h3>B.Sc. in Geology (2nd Class Honors)</h3>
+                    <p>Chulalongkorn University, Thailand</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-content">
+                <h2>Research Publications</h2>
+                <div class="publication">
+                    <p>Lapone Techapinyawat, Wenlu Wang, Mehrube Mehrubeoglu, and Hua Zhang. (2024). GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. In The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24).</p>
+                </div>
+                <div class="publication">
+                    <p>Hannah Garcia, Lapone Techapinyawat, Jim Lee, Hua Zhang. (2024). Equitable stormwater utility fees: an integrated analysis of environmental, socioeconomic and infrastructure factors at the community scale. Environmental research infrastructure and sustainability.</p>
+                </div>
+                <div class="publication">
+                    <p>Lapone Techapinyawat, Aaliyah Timms, Jim Lee, Yuxia Huang, Hua Zhang. (2024). Integrated urban land cover analysis using deep learning and post-classification correction. Computer-Aided Civil and Infrastructure Engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-content">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>Research Assistant</h3>
+                    <p>Texas A&M University – Corpus Christi | 2022-2024</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Teaching Assistant</h3>
+                    <p>University of Idaho | 2020-2021</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Geophysicist</h3>
+                    <p>PTT Exploration and Production P.C.L., Thailand (PTTEP) | 2015-2019</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
