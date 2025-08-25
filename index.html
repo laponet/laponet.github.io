@@ -1,424 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lapone Techapinyawat - Geospatial Computer Science</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <style>
-        :root {
-            --primary-color: #1a237e;
-            --secondary-color: #0277bd;
-            --accent-color: #4fc3f7;
-            --background-color: #f5f5f5;
-            --text-color: #333;
-            --section-spacing: 40px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .hero-banner {
-            position: relative;
-            height: 400px;
-            overflow: hidden;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banner.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 20px;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5em;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-
-        section {
-            padding: 40px;
-            background-color: white;
-            margin-bottom: var(--section-spacing);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid var(--secondary-color);
-            font-size: 1.8em;
-        }
-
-        h3 {
-            color: var(--secondary-color);
-            margin: 15px 0 10px 0;
-            font-size: 1.4em;
-        }
-
-        .research-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            aspect-ratio: 3/4;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-
-        .gallery-caption {
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            color: white;
-            padding: 20px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            font-size: 1em;
-        }
-
-        .publication, .presentation, .award {
-            margin-bottom: 25px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .publication:last-child, .presentation:last-child, .award:last-child {
-            border-bottom: none;
-        }
-
-        .author-name {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .doi-link {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .doi-link:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 15px 0;
-        }
-
-        .skill-item {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-item:hover {
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .hero-banner {
-                height: 300px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            section {
-                padding: 20px;
-            }
-
-            .research-gallery {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lapone Techapinyawat - Geospatial Computer Science</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<style>
+:root {
+  --primary-color: #1a237e;
+  --secondary-color: #0277bd;
+  --accent-color: #4fc3f7;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  display: flex;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+.sidebar {
+  width: 280px;
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+}
+.sidebar h1 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+.sidebar .typing-text {
+  font-size: 0.9em;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 6s steps(40, end) infinite, blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 100% }
+  100% { width: 0 }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.sidebar nav ul li a:hover {
+  color: var(--accent-color);
+}
+.social-links a { margin-right: 10px; font-size: 1.5em; color: white; text-decoration: none; }
+.social-links a:hover { color: var(--accent-color); }
+.main-content {
+  margin-left: 300px;
+  padding: 30px;
+}
+h2 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); display: inline-block; margin-top: 50px; }
+.skill-item { display: inline-block; background: var(--secondary-color); color: #fff; padding: 6px 12px; margin: 5px; border-radius: 15px; font-size: 0.85em; }
+.project-card { border: 1px solid #eee; padding: 20px; border-radius: 10px; margin-bottom: 20px; transition: transform 0.3s; background: white; }
+.project-card:hover { transform: translateY(-5px); border-color: var(--secondary-color); }
+.pub-list li, .pres-list li { margin: 10px 0; }
+.pub-list a, .pres-list a { color: var(--secondary-color); text-decoration: none; }
+.pub-list a:hover, .pres-list a:hover { color: var(--accent-color); text-decoration: underline; }
+img.pub-img { width:100%; max-width:500px; border-radius:10px; margin-top:10px; }
+</style>
 </head>
 <body>
-    <div class="hero-banner">
-        <div class="hero-content">
-            <h1>Lapone Techapinyawat</h1>
-            <p style="font-size: 1.2em; margin: 15px 0;">PhD Candidate in Geospatial Computer Science</p>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> ltechapinyawat@islander.tamucc.edu</p>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/laponet" target="_blank" title="LinkedIn Profile">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:ltechapinyawat@islander.tamucc.edu" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.wesalab.com/" target="_blank" title="Research Lab Website">
-                    <i class="fas fa-flask"></i>
-                </a>
-                <a href="images/CV_Techapinyawat.pdf" target="_blank" title="Download CV">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>PhD candidate in Geospatial Computer Science with a 4.0 GPA, specializing in scalable and efficient geospatial and urban infrastructure modeling for large-scale urban datasets. Skilled in spatial algorithm development and deep learning, with experience on NSF- and NASA-funded projects. Expertise in UAV data processing, Real-Time Kinetic (RTK) Positioning, photogrammetry, and integration of raster and vector data for high-resolution urban analysis.</p>
-            
-            <h3>Core Skills</h3>
-            <div class="skill-list">
-                <span class="skill-item">Urban Hydrology</span>
-                <span class="skill-item">Surface Runoff Modeling</span>
-                <span class="skill-item">Spatial Algorithms</span>
-                <span class="skill-item">Spatial Computing</span>
-                <span class="skill-item">Python</span>
-                <span class="skill-item">SQL</span>
-                <span class="skill-item">GIS</span>
-                <span class="skill-item">Machine Learning</span>
-                <span class="skill-item">Deep Learning</span>
-                <span class="skill-item">Graph Neural Networks</span>
-                <span class="skill-item">UAV</span>
-                <span class="skill-item">Photogrammetry</span>
-                <span class="skill-item">GIS & Remote Sensing</span>
-                <span class="skill-item">Land Use & Land Cover Analysis</span>
-                <span class="skill-item">Digital Elevation Modeling Applications</span>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Ph.D. in Geospatial Computer Science</h3>
-                <p>Texas A&M University – Corpus Christi</p>
-                <p>Expected Graduation: Fall 2025 | GPA: 4.0</p>
-                <p>Dissertation: Development of Integrated Hydrological and Geospatial Methods for Urban Stormwater Management</p>
-            </div>
-            <div class="education-item">
-                <h3>M.Sc. in Geological Engineering</h3>
-                <p>University of Idaho | GPA: 4.0</p>
-            </div>
-            <div class="education-item">
-                <h3>B.Sc. in Geology (2nd Class Honors)</h3>
-                <p>Chulalongkorn University, Thailand</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <h3>Research Assistant</h3>
-                <p>Texas A&M University – Corpus Christi | 2022-2024</p>
-            </div>
-            <div class="experience-item">
-                <h3>Teaching Assistant</h3>
-                <p>University of Idaho | 2020-2021</p>
-            </div>
-            <div class="experience-item">
-                <h3>Geophysicist</h3>
-                <p>PTT Exploration and Production P.C.L., Thailand (PTTEP) | 2015-2019</p>
-            </div>
-            <div class="experience-item">
-                <h3>Intern</h3>
-                <p>PTT Exploration and Production P.C.L., Thailand (PTTEP) | 2014</p>
-            </div>
-            <div class="experience-item">
-                <h3>Intern</h3>
-                <p>Department of Groundwater Resources, Thailand | 2013</p>
-            </div>
-        </section>
-        
-        <section id="research">
-            <h2>Research Projects</h2>
-            <div class="research-item">
-                <h3>Current Research Projects</h3>
-                <ul>
-                    <li>NSF AI-powered Diagnosis Augmented by Self-sustaining Sensing System for Intelligent Wastewater Infrastructure Management [2318641]</li>
-                    <li>NSF Where the Runoff Begins: Rethinking the Role of Impervious Area in Urban Stormwater Management [2050986]</li>
-                    <li>NASA Toward Environmentally and Socially Equitable Stormwater Management Fees [80NSSC22K1670]</li>
-                </ul>
-            </div>
-            
-            <div class="research-gallery">
-                <div class="gallery-item">
-                    <img src="images/70960767573__EF04BE9A-51EB-43DF-AC92-ABC0636F5795.JPG" alt="UAV Survey Pattern"/>
-                    <div class="gallery-caption">UAV Survey Pattern for Coastal Analysis</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/70974962212__3FBFA1EE-AA7D-44A7-B389-13FD0CC1D4B0.JPG" alt="Aerial Imagery"/>
-                    <div class="gallery-caption">High-Resolution Aerial Imagery of Coastal Area</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/70974963531__9857699F-5AD0-4928-8886-088FC6FB62B3.JPG" alt="Elevation Model"/>
-                    <div class="gallery-caption">Digital Elevation Model Analysis</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_9257.jpg" alt="UAV Setup"/>
-                    <div class="gallery-caption">UAV Flight Planning and Control Setup</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_3243.jpg" alt="Land Use Classification"/>
-                    <div class="gallery-caption">Urban Land Use Classification Analysis</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_0270.JPG" alt="Conference Presentation"/>
-                    <div class="gallery-caption">Presenting at ACM SIGSPATIAL Conference</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_0278.JPG" alt="SIGSPATIAL Conference"/>
-                    <div class="gallery-caption">ACM SIGSPATIAL Conference 2024</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/IMG_8099.JPG" alt="AGU Presentation"/>
-                    <div class="gallery-caption">Presenting at AGU 2023 Conference</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Research Publications</h2>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Wenlu Wang, Mehrube Mehrubeoglu, and Hua Zhang. (2024). GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. In The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '24), October 29-November 1, 2024, Atlanta, GA, USA. ACM, New York, NY, USA, 11 pages. <a href="https://doi.org/10.1145/3678717.3691281" class="doi-link" target="_blank">https://doi.org/10.1145/3678717.3691281</a></p>
-            </div>
-            <div class="publication">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Jim Lee, Hua Zhang. (2024). Equitable stormwater utility fees: an integrated analysis of environmental, socioeconomic and infrastructure factors at the community scale. Environmental research infrastructure and sustainability. <a href="https://doi.org/10.1088/2634-4505/ad8305" class="doi-link" target="_blank">https://doi.org/10.1088/2634-4505/ad8305</a></p>
-            </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Jim Lee, Yuxia Huang, Hua Zhang. (2024). Integrated urban land cover analysis using deep learning and post-classification correction. Computer-Aided Civil and Infrastructure Engineering. <a href="https://doi.org/10.1111/mice.13277" class="doi-link" target="_blank">https://doi.org/10.1111/mice.13277</a></p>
-            </div>
-            <div class="publication">
-                <p>Jim Lee, Hua Zhang, Yuxia Huang. (2024). Toward a more socially equitable stormwater management fee: The case of Corpus Christi in Texas, USA. Environment and Planning B: Urban Analytics and City Science. <a href="https://doi.org/10.1177/23998083231207535" class="doi-link" target="_blank">https://doi.org/10.1177/23998083231207535</a> (Contribution recognized in the acknowledgment section)</p>
+<div class="sidebar">
+  <h1>Lapone Techapinyawat</h1>
+  <p class="typing-text">Ph.D. Candidate | Geospatial Computer Science | Urban Hydrology | GIS & AI</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/laponet" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:ltechapinyawat@islander.tamucc.edu" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.wesalab.com/" target="_blank" title="Research Lab"><i class="fas fa-flask"></i></a>
+    <a href="images/CV_Techapinyawat.pdf" target="_blank" title="Download CV"><i class="fas fa-file-pdf"></i></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Featured Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#presentations">Presentations</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
 </div>
-            <div class="publication">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Aerial Characterization of Surface Depressions in Urban Watersheds. Journal of Hydrology. <a href="https://doi.org/10.1016/j.jhydrol.2023.129954" class="doi-link" target="_blank">https://doi.org/10.1016/j.jhydrol.2023.129954</a></p>
-            </div>
-        </section>
 
-        <section id="presentations">
-            <h2>Research Presentations</h2>
-            <div class="presentation">
-                <p><span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Hannah Garcia, Hua Zhang. (2023). Utilizing Unmanned Aircraft Systems (UAS) for Identifying Surface Depressions in Urban Watersheds: How Reliable Is It?. Presentation presented at: AGU Fall Meeting 2023. San Francisco, CA.</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Investigating environmental justice in stormwater utility fees at the parcel scale using an unmanned aircraft system and machine learning. Presentation presented at: 2023 World Environmental & Water Resources Congress; Henderson, NV</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at: Symposium for Student Innovation, Research, and Creative Activities; Corpus Christi, TX</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, <span class="author-name">Lapone Techapinyawat</span>, Ian Goulden-Brady, Aaliyah Timms, Jim Lee, Lucy Huang, Hua Zhang. Are stormwater utility fees reasonable? A parcel-scale investigation using an unmanned aircraft system and machine learning. Poster presented at: Texas Water 2023; Houston, TX</p>
-            </div>
-            <div class="presentation">
-                <p>Hannah Garcia, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Aaliyah Timms, Nathaniel Galvan. An improved understanding of stormwater flow: combining multi-sensor observation and hydrograph analysis in the Texas Coastal Bend region. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
-            </div>
-            <div class="presentation">
-                <p>Aaliyah Timms, Ian Goulden-Brady, <span class="author-name">Lapone Techapinyawat</span>, Hannah Garcia, Wen Zhong. Investigating the impacts of surface imperviousness on runoff generation through laboratory experiments based on an advanced hydrology apparatus. Poster presented at Texas A&M University System 18th Annual Pathways Student Research Symposium; March 2-3, 2023; Texas A&M University at Galveston</p>
-            </div>
-        </section>
+<div class="main-content">
+  <section id="education">
+    <h2>Education</h2>
+    <p>Ph.D., Geospatial Computer Science - Texas A&M University – Corpus Christi (Expected 2025)</p>
+    <p>M.Sc., Geological Engineering - University of Idaho</p>
+    <p>B.Sc., Geology - Chulalongkorn University, Thailand</p>
+  </section>
 
-        <section id="awards">
-            <h2>Financial Awards</h2>
-            <div class="award">
-                <p>NSF Travel Award for ACM SIGSPATIAL 2024</p>
-            </div>
-            <div class="award">
-                <p>Geospatial Surveying Engineering Scholarship, Texas A&M University – Corpus Christi (2024)</p>
-            </div>
-            <div class="award">
-                <p>College of Engineering Scholarship (Fall), Texas A&M University – Corpus Christi (2024)</p>
-            </div>
-            <div class="award">
-                <p>College of Engineering Scholarship (Summer), Texas A&M University – Corpus Christi (2024)</p>
-            </div>
-            <div class="award">
-                <p>RA assistantship award, Texas A&M University – Corpus Christi (2022-Present)</p>
-            </div>
-            <div class="award">
-                <p>TA assistantship award, University of Idaho (2020-2021)</p>
-            </div>
-            <div class="award">
-                <p>Fully funded scholarship awards from PTT Exploration and Production PCL (PTTEP) during undergraduate study</p>
-            </div>
-        </section>
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
+      <h3>GraphParcelNet</h3>
+      <p>Parcel-level imperviousness prediction using Graph Neural Networks. Presented at ACM SIGSPATIAL 2024.</p>
+      <img class="pub-img" src="images/graphparcelnet.png" alt="GraphParcelNet illustration">
     </div>
+    <div class="project-card">
+      <h3>Urban Stormwater Modeling</h3>
+      <p>Algorithms for surface runoff detection & depression storage using UAV & DEM data.</p>
+      <img class="pub-img" src="images/stormwater_model.png" alt="Stormwater modeling flowchart">
+    </div>
+    <div class="project-card">
+      <h3>Equitable Stormwater Fees</h3>
+      <p>NASA-funded project integrating socioeconomic & geospatial data for fairer stormwater utilities.</p>
+      <img class="pub-img" src="images/stormwater_fees.png" alt="Equitable fees chart">
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li><a href="https://doi.org/10.1145/3678717.3691281" target="_blank">GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks (ACM SIGSPATIAL 2024)</a></li>
+      <li><a href="https://doi.org/10.1088/2634-4505/ad8305" target="_blank">Equitable stormwater utility fees: integrated analysis at the community scale (ERIS 2024)</a></li>
+      <li><a href="https://doi.org/10.1111/mice.13277" target="_blank">Integrated urban land cover analysis using deep learning and post-classification correction (MICE 2024)</a></li>
+      <li><a href="https://doi.org/10.1016/j.jhydrol.2023.129954" target="_blank">Aerial Characterization of Surface Depressions in Urban Watersheds (J. Hydrology 2023)</a></li>
+    </ul>
+    <p>Full list available at <a href="https://scholar.google.com/citations?user=QgpjelcAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+  </section>
+
+  <section id="presentations">
+    <h2>Presentations</h2>
+    <ul class="pres-list">
+      <li>GraphParcelNet: Predicting Parcel-Level Imperviousness from Geospatial Vector Data using Graph Neural Networks. ACM SIGSPATIAL 2024.</li>
+      <li>Uncovering Hidden Impervious Surfaces Under Tree Canopies: Comprehensive Urban Land Cover Classification with 15-cm Imagery and Vector-Based Corrections. AGU 2024.</li>
+      <li>Utilizing Unmanned Aircraft Systems (UAS) for Identifying Surface Depressions in Urban Watersheds: How Reliable Is It?. AGU Fall Meeting 2023, H41F-04.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <span class="skill-item">Urban Hydrology</span>
+    <span class="skill-item">GIS & Remote Sensing</span>
+    <span class="skill-item">Feature Extraction</span>
+    <span class="skill-item">Python</span>
+    <span class="skill-item">Machine Learning</span>
+    <span class="skill-item">Deep Learning</span>
+    <span class="skill-item">Graph Neural Networks</span>
+  </section>
+</div>
 </body>
-</html>                
+</html>
